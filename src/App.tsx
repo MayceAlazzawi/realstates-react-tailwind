@@ -1,10 +1,12 @@
 import React, { FC } from "react";
 import "./index.css";
-import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { SearchBar } from "./components/searchBar";
 const App: FC = () => {
   return (
-    <div className="App font-body bg-salmon">
-      <Navbar />
+    <div className="App font-body  flex justify-center  ">
+      <Hero />
+      <SearchBar />
     </div>
   );
 };

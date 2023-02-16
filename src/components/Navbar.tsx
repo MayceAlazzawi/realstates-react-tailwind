@@ -2,7 +2,6 @@ import * as React from "react";
 import { useState } from "react";
 import { Button } from "./Button";
 import Send from "../assets/icons/send.svg";
-
 interface Props {}
 
 export const Navbar = (props: Props) => {
@@ -12,17 +11,13 @@ export const Navbar = (props: Props) => {
     return "hi";
   };
   return (
-    <nav className="z-10 bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 text-[#fff] ">
+    <nav className=" bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 text-[#fff] ">
       <div className="container flex flex-wrap items-center justify-between mx-auto ">
         <a
           href="https://flowbite.com/"
           className="flex items-center  md:order-1"
         >
-          {/* <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-6 mr-3 sm:h-9"
-            alt="Flowbite Logo"
-          /> */}
+          {/* <img src={Hero0} className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> */}
           <span className="self-center text-[36px] font-semibold whitespace-nowrap dark:text-white text-[#fff]">
             الـعـقـاريـة
           </span>
@@ -30,13 +25,13 @@ export const Navbar = (props: Props) => {
         <div className="flex flex-row space-x-">
           <div className="hidden md:block">
             <Button
-              bgBtn={"[#fff]"}
+              bgBtn={"bg-[#fff]"}
               textSize={"[14px]"}
-              color={"darkGreen"}
+              color={"text-darkGreen"}
               fontWeight={"semibold"}
               width={"119"}
               m={" m-[0px]"}
-              p={"[16px]"}
+              p={"p-[8px]"}
               children={"تواصل معنا"}
               onClick={clickHandler}
               icon={Send}
@@ -279,7 +274,7 @@ export const Navbar = (props: Props) => {
           </div>
         </div>
         <div
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-2 ${isOpen}`}
+          className={` items-center justify-between w-full md:flex md:w-auto md:order-2 ${isOpen}`}
           id="mobile-menu-language-select"
         >
           <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-4 lg:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
