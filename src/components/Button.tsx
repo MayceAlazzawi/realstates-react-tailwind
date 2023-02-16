@@ -18,7 +18,7 @@ export const Button = (props: Props) => {
   return (
     <button
       onClick={props.onClick}
-      className={`flex flex-row  text-center align-center justify-center items-center gap-2 h-[48px] bg-${props.bgBtn} ${props.m}  p-${props.p} w-${props.width} font-${props.fontWeight} text-${props.color} text-${props.textSize} rounded focus:outline-none cursor-pointer other`}
+      className={`flex flex-row  text-center align-center justify-center items-center gap-2 h-[48px] ${props.bgBtn} ${props.m} ${props.p} w-${props.width} font-${props.fontWeight} ${props.color} text-${props.textSize} rounded focus:outline-none cursor-pointer other`}
     >
       <img src={props.icon}></img>
       {props.children}

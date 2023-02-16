@@ -28,6 +28,10 @@ module.exports = {
     fontFamily: {
       body: ["Montserrat"],
     },
+    backgroundImage: {
+      hero: "url('./assets/images/hero0.png')",
+      hero1: "url('./assets/images/hero1.png')",
+    },
     // },
   },
   plugins: [],
