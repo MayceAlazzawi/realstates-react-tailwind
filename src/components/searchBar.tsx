@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { Button } from "./Button";
 import Send from "../assets/icons/send.svg";
+import { CityDropDown } from "./CityDropdown";
 
 export interface Props {}
 
@@ -12,61 +13,68 @@ export function SearchBar(props: Props) {
     return "hi";
   };
   return (
-    // <div className="bg-mint absolute inset-0 flex justify-center items-center z-10 mt-[450px] dark:bg-gray-900 w-4/5 ">
-    //   <div className="max-w-screen-xl px-4 mx-auto lg:px-12 w-full">
-    //     {/* <!-- Start coding here --> */}
-    //     <div className="relative bg-white shadow-md dark:bg-gray-800 sm:rounded-lg">
-    //       <div className="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4"></div>
-    //       <div className="w-full md:w-1/2">
-    //         <form className="flex items-center">
-    //           <label className="sr-only">Search</label>
-    //           <div className="relative w-full">
-    //             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-    //               <svg
-    //                 aria-hidden="true"
-    //                 className="w-5 h-5 text-gray-500 dark:text-gray-400"
-    //                 fill="currentColor"
-    //                 viewBox="0 0 20 20"
-    //                 xmlns="http://www.w3.org/2000/svg"
-    //               >
-    //                 <path
-    //                   fill-rule="evenodd"
-    //                   d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-    //                   clip-rule="evenodd"
-    //                 />
-    //               </svg>
-    //             </div>
-    //             <input
-    //               type="text"
-    //               id="simple-search"
-    //               className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-    //               placeholder="Search"
-    //             />
-    //           </div>
-    //         </form>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
-    <section className=" dark:bg-gray-900 flex items-center mt-[540px] z-20 absolute w-full ">
-      <div className="max-w-screen-xl px-4 mx-auto lg:px-12  w-full ">
+    <section className=" dark:bg-gray-900 flex items-center mt-[540px] z-20 absolute w-full mt-4">
+      <div className=" max-w-screen-xl px-4 mx-auto lg:px-12  w-full ">
         {/* <!-- Start coding here --> */}
-        <div className="relative bg-[#fff] shadow-md dark:bg-gray-800 sm:rounded-lg px-[10px] py-2">
-          <div className="grid grid-cols-6 divide-x">
-            <button className="text-[12px]  font-semibold">شـراءعقارات</button>
-            <button className=" text-[12px] font-semibold">بـيع عقارات</button>
+        <div className="relative bg-[#fff] shadow-md dark:bg-gray-800 sm:rounded-lg rounded-[1.5rem] flex flex-col md:flex-col gap-2">
+          <div className="grid md:grid-cols-5 pt-0 mt-0 h-8 w-3/3 align-center">
+            <div className="flex flex-row  divide-x divide-[#D7E2EE] ">
+              <div className="buying w-1/2 md:p-1 text-center">
+                <button className="text-[10px] align-center   text-darkGreen font-semibold md:text-[12px]">
+                  شـراء عقارات
+                </button>
+              </div>
+              <div className="seling w-1/2 md:p-1 text-center">
+                <button className="text-[10px] text-darkGreen font-semibold md:text-[12px]">
+                  بـيع عقارات
+                </button>
+              </div>
+            </div>
+            {/* <button className="text-[10px] pt-1 text-darkGreen font-semibold md:text-[12px]">
+              شـراء عقارات
+            </button>
+            <button className=" text-[10px] pl-2 pt-1 text-darkGreen font-semibold md:text-[12px]">
+              بـيع عقارات
+            </button> */}
           </div>
-          <div>jj</div>
-          <div className="pl-4">
+          <div className="px-4 pt-1 flex gap-1 flex-col justify-center items-center w-full md:flex-row ">
+            <div className="three w-full lg:w-1/5">
+              <CityDropDown
+                name="الـمواصفات"
+                item1="1+0"
+                item2="1+1"
+                item3="2+1"
+                item4="3+1"
+              />
+            </div>
+            <div className="one lg:w-2/5 w-full">
+              <CityDropDown
+                name="الـمواصفات"
+                item1="1+0"
+                item2="1+1"
+                item3="2+1"
+                item4="3+1"
+              />
+            </div>
+            <div className="two lg:w-2/5 w-full">
+              <CityDropDown
+                name="الـمواصفات"
+                item1="1+0"
+                item2="1+1"
+                item3="2+1"
+                item4="3+1"
+              />
+            </div>
+          </div>
+          <div className="py-1 px-4 flex justify-center md:justify-start">
             <Button
               bgBtn={"bg-mint"}
-              textSize={"[14px]"}
+              textSize={"[10px] lg:text-[14px]"}
               color={"text-darkGreen"}
-              fontWeight={"semibold"}
+              fontWeight={"normal"}
               width={"119"}
-              m={" m-[0px]"}
-              p={"p-[8px]"}
+              m={" mb-[4px]"}
+              p={"md:px-[8px] px-4"}
               children={" أبحث"}
               onClick={clickHandler}
               icon={Send}
