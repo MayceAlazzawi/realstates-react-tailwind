@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { Button } from "./Button";
 import Send from "../assets/icons/send.svg";
+import { CityDropDown } from "./CityDropdown";
 interface Props {}
 
 export const Navbar = (props: Props) => {
@@ -239,7 +240,7 @@ export const Navbar = (props: Props) => {
                 </li>
               </ul>
             </div>
-            <button
+            {/* <button
               data-collapse-toggle="mobile-menu-language-select"
               type="button"
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -261,7 +262,20 @@ export const Navbar = (props: Props) => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </button>
+            </button> */}
+            <div className="md:hidden">
+              <CityDropDown
+                toggelHidden="block"
+                arrowHidden="hidden"
+                menuWidth="w-[23rem]"
+                arrayOfItems={["1+0", "1+1"]}
+                // item1="1+0"
+                // item2="1+1"
+                // item1="1+1"
+                // item3="2+1"
+                // item4="3+1"
+              />
+            </div>
           </div>
           <div className=" items-center md:order-0 hidden lg:flex">
             <a
@@ -273,7 +287,8 @@ export const Navbar = (props: Props) => {
             </a>
           </div>
         </div>
-        <div
+        {/* <div
+         
           className={` items-center justify-between w-full md:flex md:w-auto md:order-2 ${isOpen}`}
           id="mobile-menu-language-select"
         >
@@ -312,7 +327,7 @@ export const Navbar = (props: Props) => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
