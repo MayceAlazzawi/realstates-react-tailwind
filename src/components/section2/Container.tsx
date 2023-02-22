@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card } from "./Card";
+// import { Card } from "./Card";
 import { Button } from "../Button";
 import Send from "../../assets/icons/send.svg";
 
@@ -32,6 +32,7 @@ export function Container(props: Props) {
         </div>
       </div>
       <div className="  grid grid-cols-3 gap-4 p-4">
+        {/* <Card />
         <Card />
         <Card />
         <Card />
@@ -39,8 +40,7 @@ export function Container(props: Props) {
         <Card />
         <Card />
         <Card />
-        <Card />
-        <Card />
+        <Card /> */}
       </div>
     </div>
   );
