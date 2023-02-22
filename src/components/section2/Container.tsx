@@ -24,6 +24,7 @@ export function Container(props: Props) {
             children={"مشاهدة المزيد"}
             onClick={clickHandler}
             icon={Send}
+            other={"border border-mint"}
           />
         </div>
         <div className="bg-mintLight text-right px-8">

@@ -8,7 +8,7 @@ export const Card = (rops: Props) => {
     <div className="">
       <a
         href="#"
-        className="flex flex-col  justify-end items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 flex text-right h-[90px] p-[6px] max-w-max items-center"
+        className="flex flex-col  justify-end items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 flex text-right h-[90  px] p-[6px] max-w-max items-center"
       >
         <div className="flex flex-col justify-between  leading-normal">
           <h5 className="mb-2 text-[16px] font-semibold tracking-tight text-[#547e6f] dark:text-white">
