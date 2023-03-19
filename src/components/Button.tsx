@@ -12,7 +12,7 @@ interface Props {
   other?: string | number;
   children: string;
   onClick: () => string;
-  icon: any;
+  icon?: any;
 }
 
 export const Button = (props: Props) => {
