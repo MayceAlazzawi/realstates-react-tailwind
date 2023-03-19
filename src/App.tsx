@@ -10,7 +10,7 @@ const App: FC = () => {
   return (
     <div className="App font-body  flex justify-center items-center  flex-col">
       <Hero />
-      {/* <Container /> */}
+      <Container />
     </div>
   );
 };
